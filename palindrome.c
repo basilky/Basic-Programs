@@ -1,38 +1,41 @@
-#include<stdio.h>
+/*
+Finds nearest palndrome number of given numbers
+*/
+#include <stdio.h>
 void main()
 {
-    long long n,temp,rev;
-    int noin,i,j=-1,a[1000];
+    long long number, temp, reverse;
+    int no_of_inputs, i, j = -1, a[1000];
     printf("\nenter number of inputs : ");
-    scanf("%d",&noin);
-    for(i=0;i<noin;i++)
-    {    
+    scanf("%d", &no_of_inputs);
+    for (i = 0; i < no_of_inputs; i++)
+    {
         printf("\nenter number : ");
-        scanf("%d",&a[i]);
+        scanf("%d", &a[i]);
     }
-    while(1)
+    while (1)
     {
         j++;
-        if(i==j)
+        if (i == j)
         {
             break;
         }
-            n=a[j];
-        while(1)
+        number = a[j];
+        while (1)
         {
-            n++;
-            rev=0;
-            temp=n;
-            while(temp>0)
+            reverse = 0;
+            temp = number;
+            while (temp > 0)
             {
-                rev=rev*10+temp%10;
-                temp/=10;
+                reverse = reverse * 10 + temp % 10;
+                temp /= 10;
             }
-            if(rev==n)
+            if (reverse == number)
             {
-                printf("\n%lli",n);
+                printf("\n%lli", number);
                 break;
             }
+            number++;
         }
     }
 }

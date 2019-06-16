@@ -1,3 +1,9 @@
+/*
+
+Smallest of numbers without using comparison
+
+*/
+
 #include<stdio.h>
 void main()
 {
@@ -13,19 +19,18 @@ void main()
         f--;
         if(!d)
         {
-        printf("smmal id %d",a);
+        printf("small id %d",a);
         break;
         }
         if(!e)
         {
-        printf("smmal id %d",b);
+        printf("small id %d",b);
         break;
         }
         if(!f)
         {
-        printf("smmal id %d",c);
+        printf("small id %d",c);
         break;
         }
     }
-
 }

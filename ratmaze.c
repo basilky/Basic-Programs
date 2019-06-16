@@ -1,3 +1,19 @@
+/*
+AMCAT RatMazeProblem
+--------------------
+
+Mooshak the mouse has been placed in a maze.
+There is a huge chunk of cheese somewhere in the maze. 
+The maze is represented as a two-dimensional array of integers, where 0 represents walls.
+1 represents paths where Mooshak can move and 9 represents the huge chunk of cheese.
+Mooshak starts in the top left corner at 0.
+Write a method is Path of class Maze Path to determine if Mooshak can reach the huge chunk of cheese. 
+The input to is Path consists of a two dimensional array and for the maze matrix. 
+The method should return 1 if there is a path from Mooshak to the cheese. 
+And 0 if not Mooshak is not allowed to leave the maze or climb on walls.
+
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -6,6 +22,7 @@ int main()
     int i,j,k,l,r,c,a[100][100];
     printf("\nenter dimension : ");
     scanf("%d%d",&r,&c);
+    printf("\nenter values \n");
     for(i=0;i<r;i++)
     for(j=0;j<c;j++)
     scanf("%d",&a[i][j]);
@@ -32,7 +49,7 @@ int main()
     {
         if(a[current->r][current->c]==9)
         {
-            printf("\npath for eli");
+            printf("\n\npath exists!");
             break;
         }
         else
@@ -56,7 +73,7 @@ int main()
             {
                 if((current->r==0)&&(current->c==0))
                 {
-                    printf("\nno way man");
+                    printf("\n\nno way man!");
                     break;
                 }
                 else
@@ -105,6 +122,6 @@ int main()
             }
             }
         fflush(stdout);
-        sleep(1);
+        sleep(0.5);
     }
 }
