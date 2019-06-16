@@ -13,6 +13,7 @@ void main()
         printf("\nenter number : ");
         scanf("%d", &a[i]);
     }
+    printf("\nnearest palindromes are :");
     while (1)
     {
         j++;
@@ -32,10 +33,11 @@ void main()
             }
             if (reverse == number)
             {
-                printf("\n%lli", number);
+                printf("  %lli", number);
                 break;
             }
             number++;
         }
     }
+    printf("\n");
 }

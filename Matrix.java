@@ -1,6 +1,10 @@
+/* 
+simple program to compare two matrices.
+*/
+
 import java.io.*;
 import java.util.*;
-class Test
+class Matrix
 {
     public static void main(String basil[])
     {
@@ -38,7 +42,7 @@ class Test
                 }
             }
             if(flag==0)
-            System.out.println("Not equal");
+            System.out.println("not equal");
             else
             System.out.println("equal");
             sc.close();

@@ -1,6 +1,8 @@
-import java.*;
+/* 
+Print numbers in a triangular shape
+*/
 import java.util.Scanner;
-class triangle
+class Triangle
 {
     public static void main(String args[])
     {
